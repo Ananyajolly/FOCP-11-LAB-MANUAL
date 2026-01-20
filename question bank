@@ -1,0 +1,12 @@
+/*ASSIGNMENT QUESTION 1
+#include<iostream>
+using namespace std;
+int main()
+{
+    int amt1,amt2;
+    cout<<"enter both of the amounts";
+    cin>>amt1>>amt2;
+    cout<<"amount1="<<amt1<<endl<<"amount2="<<amt2;
+    int total_amt=amt1+amt2;
+    cout<<"\ntotal amount ="<<total_amt<<endl;
+}*/
