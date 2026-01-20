@@ -1,0 +1,21 @@
+/*take input from the user and print thier roll number
+#include<iostream>
+using namespace std;
+int main()
+{
+int rno;
+cout<<"enter ur rollnumber"<<endl;
+cin>>rno;
+cout<<"your rollnumber is "<<rno;
+}*/
+/*Read 3 subjects marks and print marks along with 
+#include<iostream>
+using namespace std;
+int main()
+{
+int marks1,marks2,marks3;
+cout<<"enter your marks of 3 subjects"<<endl;
+cin>>marks1>>marks2>>marks3;
+cout<<"marks1  ="<<marks1<<endl<<"marks2  ="<<marks2<<endl<<"marks3 ="<<marks3;
+return 0;
+}*/
