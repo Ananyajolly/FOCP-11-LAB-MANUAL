@@ -46,3 +46,43 @@ int main()
     cout<<"value of a is 0"<<endl;
   }
  }*/
+/*(C++ program to identify the type of a character)
+#include<iostream>
+using namespace std;
+int main()
+{
+ char ch;
+ cout<<"enter a charecter"<<endl;
+ cin>>ch;
+ if(ch>='a' && ch<='z')
+ {
+  cout<<"its lower case"<<endl;
+ }
+ else if(ch>='A'&& ch<='Z')
+ {
+  cout<<"its upper case"<<endl;
+ }
+ else
+ {
+  cout<<"its a digit"<<endl;
+ }
+}*/
+/*(while loop)
+#include<iostream>
+using namespace std;
+int main()
+{
+  int number;
+  cout<<"enter a number"<<endl;
+  cin>>number;
+  int i;
+  cout<<"enter the value of i"<<endl;
+  cin>>i;
+  while(i<=number)
+  {
+    cout<<i;
+    i=i+1;
+  }
+}*/
+
+
