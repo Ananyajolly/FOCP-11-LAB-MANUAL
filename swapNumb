@@ -1,0 +1,37 @@
+/*#include<iostream>
+using namespace std;
+void swap(int *x,int *y)
+{
+    *x=*x+*y;
+    *y=*x-*y;
+    *x=*x-*y;
+    cout<<"inside the fuctions swap a="<<*x<<"b"<<*y<<endl;
+}
+int main()
+{
+ int a=23;
+ int b=34;
+ cout<<"before swap a="<<a<<"b="<<b<<endl;
+ swap(&a,&b);
+cout<<"after the swap a="<<a<<"b"<<b;
+}
+*/
+#include<iostream>
+using namespace std;
+void swap(int *x,int *y);
+int main()
+{
+ int a,b;
+ cout<<"enter the value of a and b"<<endl;
+ cin>>a;
+ cin>>b;
+ swap(&a,&b);
+ cout<<"after the swap a="<<a<<" b="<<b<<endl;
+}
+void swap(int *x,int *y)
+{
+ *x=*x+*y;
+ *y=*x-*y;
+ *x=*x-*y;
+ cout<<"value inside the fuction a="<<*x<<" b="<<*y<<endl;
+}
