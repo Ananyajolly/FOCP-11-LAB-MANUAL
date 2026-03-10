@@ -1,0 +1,248 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+ int a;
+ cout<<"enter a value"<<endl;
+ cin>>a;
+ if(a>0)
+ {
+    cout<<"a is positive"<<endl;
+ }
+ else
+ {
+  if(a<0)
+  {
+    cout<<"a is negative"<<endl;
+  }
+  else
+  {
+    cout<<"value of a is 0"<<endl;
+  }
+ }
+
+}*/
+/*(if//if else//else)
+#include<iostream>
+using namespace std;
+int main()
+{
+ int a;
+ cout<<"enter a value"<<endl;
+ cin>>a;
+ if(a>0)
+ {
+    cout<<"a is positive"<<endl;
+ }
+ else if(a<0)
+  {
+    cout<<"a is negative"<<endl;
+  }
+ 
+  
+  else
+  {
+    cout<<"value of a is 0"<<endl;
+  }
+ }*/
+/*(C++ program to identify the type of a character)
+#include<iostream>
+using namespace std;
+int main()
+{
+ char ch;
+ cout<<"enter a charecter"<<endl;
+ cin>>ch;
+ if(ch>='a' && ch<='z')
+ {
+  cout<<"its lower case"<<endl;
+ }
+ else if(ch>='A'&& ch<='Z')
+ {
+  cout<<"its upper case"<<endl;
+ }
+ else
+ {
+  cout<<"its a digit"<<endl;
+ }
+}*/
+/*(while loop)
+#include<iostream>
+using namespace std;
+int main()
+{
+  int number;
+  cout<<"enter a number"<<endl;
+  cin>>number;
+  int i;
+  cout<<"enter the value of i"<<endl;
+  cin>>i;
+  while(i<=number)
+  {
+    cout<<i;
+    i=i+1;
+  }
+}*/
+/*(find the sum using while loop)
+#include<iostream>
+using namespace std;
+int main()
+{
+  int number,sum=0;
+  cout<<"enter a number"<<endl;
+  cin>>number;
+  int i;
+  cout<<"enter the value of i"<<endl;
+  cin>>i;
+  while(i<=number)
+  {
+    sum=sum+i;
+    i=i+1;
+  }
+  cout<<"the sum  is "<<sum;
+}*//*(sum of all the even numbers)
+#include<iostream>
+using namespace std;
+int main()
+{
+  int number,sum=0;
+  cout<<"enter a number"<<endl;
+  cin>>number;
+  int i=2;
+  while(i<=number)
+  {
+    sum=sum+i;
+    i=i+2;
+  }
+  cout<<"the sum  is "<<sum;
+}*//*(whether the number is prime or not)
+#include<iostream>
+using namespace std;
+int main()
+{
+  int n;
+  cout<<"enter a number"<<endl;
+  cin>>n;
+  int i=2;
+  while(i<n){
+  if(n%i==0)
+  {
+    cout<<"the number is not prime for  "<<i<<endl;
+  }
+  else
+  {
+   cout<<"the number is prime for "<<i<<endl;    
+  }
+  i=i+1;
+}
+}*//*(pattern making)
+#include<iostream>
+using namespace std;
+int main()
+{
+  int r=1;
+  int n;
+  cout<<"n="<<endl;
+  cin>>n;
+  while(r<=n)
+  {
+    int c=1;
+    while(c<=n)
+    {
+      cout<<"*";
+      c++;
+    }
+    cout<<endl;
+    r++;
+
+  }
+
+}*/
+/*pattern 1
+#include<iostream>
+using namespace std;
+int main () 
+{
+ int i,j,n;
+ cout<<"enter the value of n";
+ cin>>n;
+ for(i=1;i<=n;i++)
+ {
+  for(j=1;j<=n;j++)
+  {
+    cout<<"*";
+  }
+  cout<<endl;
+ }
+}*//*pattern 2 1234567
+#include<iostream>
+using namespace std;
+int main()
+{
+  int i,j,num=1,n=4;
+  for(i=1;i<=n;i++)
+  {
+    for(j=1;j<=n;j++)
+    {
+      cout<<num<<" ";
+      num++;
+    }
+    cout<<endl;
+  }
+
+}*/
+/*pattern3 ABCDEFG
+#include<iostream>
+using namespace std;
+int main()
+{
+  int i,j,n;
+  cout<<"enter ur num";
+  cin>>n;
+  char alph='A';
+  for(i=1;i<=n;i++)
+  {
+    for(j=1;j<=n;j++)
+    {
+      cout<<alph;
+      alph++;
+    }
+  cout<<endl;
+  }
+}*/
+/*pattern 4
+#include<iostream>
+using namespace std;
+int main () 
+{
+ int i,j,n,num=1;
+ cout<<"enter the value of n";
+ cin>>n;
+ for(i=1;i<=n;i++)
+ {
+  for(j=1;j<=i;j++)
+  {
+    cout<<num<<" ";
+    num++;
+  }
+  cout<<endl;
+ }
+}*//*
+#include<iostream>
+using namespace std;
+int main () 
+{
+ int i,j,n,num=1;
+ cout<<"enter the value of n";
+ cin>>n;
+ for(i=n;i>=1;i++)
+ {
+  for(j=i;j>=1;j--)
+  {
+    cout<<i<<" ";
+    
+    //num++;
+  }
+  cout<<endl;
+ }
+} */
