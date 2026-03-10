@@ -1,0 +1,36 @@
+#include<iostream>
+using namespace std;
+void swap(int *x ,int *y);
+void swap(float *z,float *c);
+
+int main()
+{
+ int a,b;
+ float v,n;
+ cout<<"enter the value of a"<<endl;
+ cin>>a;
+ cout<<"enter the value of b"<<endl;
+ cin>>b;
+swap(&a,&b);
+cout<<"after the swap a="<<a<<" b="<<b<<endl;
+ cout<<"enter the value of v"<<endl;
+ cin>>v;
+ cout<<"enter the value of n"<<endl;
+ cin>>n;
+swap(&v,&n);
+cout<<"after the swap v="<<v<<" n="<<n<<endl;
+}
+void swap(int *x,int *y)
+{
+ *x=*x+*y;
+ *y=*x-*y;
+ *x=*x-*y;
+ cout<<"value inside the fuction a="<<*x<<" b="<<*y<<endl;
+}
+void swap(float *z,float *c)
+{
+ *z=*z+*c;
+ *c=*z-*c;
+ *z=*z-*c;
+ cout<<"value inside the fuction z="<<*z<<" c="<<*c<<endl;
+}
