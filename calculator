@@ -1,0 +1,21 @@
+#include<iostream>
+using namespace std;
+int addition(int n,int m);
+int multiplication(int n,int m);
+int main()
+{
+ int n1,n2;
+ cout <<"enter numbers to be calculated"<<endl;
+ cin>>n1>>n2;
+ int a= addition(n1,n2);
+ int b= multiplication(n1,n2);
+ cout<<"Value of addition="<<a<<"\n"<<"The value after multiplication"<<b;
+}
+int addition(int n,int m)
+{
+    return(n+m);
+}
+int multiplication(int n,int m)
+{
+    return(n*m);
+}
