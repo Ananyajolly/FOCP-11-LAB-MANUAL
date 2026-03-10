@@ -1,0 +1,20 @@
+#include<iostream>
+using namespace std;
+bool prime(int n);
+int main()
+{
+ int n1;
+ cout<<"enter the number"<<endl;
+ cin>>n1;
+ bool prime(n1);
+}
+bool prime(int n)
+{
+ if(n%2==0 && n%n==0)
+ {
+    cout<<"n is not a prime number"<<endl;
+ }
+ else
+    cout<<"n is a prime number";
+ 
+}
