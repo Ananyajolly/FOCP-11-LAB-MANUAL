@@ -1,0 +1,63 @@
+#include<iostream>
+using namespace std;
+class SmartLight
+{
+ string brand;
+ int Brigt;
+ bool isOn;
+ public:
+ SmartLight();
+ SmartLight(string br);
+ bool turnOn();
+ bool turnOff();
+ int increaseBrigthness();
+ int decreaseBrigthness();
+ void displayStatus();
+
+};
+SmartLight::SmartLight()
+{
+  bool isOn=false;
+  Brigt=50;
+}
+SmartLight::SmartLight(string br)
+{
+ brand=br;
+ Brigt=50;
+
+}
+bool SmartLight::turnOn()
+{
+ bool isOn=true;
+ return isOn;
+}
+bool SmartLight:: turnOff()
+{
+ bool isOn=false;
+ return isOn;
+}
+int SmartLight::increaseBrigthness()
+{
+ Brigt=Brigt+1;
+ return Brigt;
+}
+int SmartLight::decreaseBrigthness()
+{
+  Brigt=Brigt-1;
+ return Brigt;
+}
+void SmartLight:: displayStatus()
+{
+ cout<<"The status of light is"<<turnOn()<<endl;
+ cout<<"The status of light is"<<turnOff()<<endl;
+ cout<<"The increased brigthness = "<<increaseBrigthness()<<endl;
+ cout<<"The decreased brigthness = "<<decreaseBrigthness()<<endl;
+ cout<<"The brand of the car="<<brand<<endl;
+}
+int main()
+{
+ SmartLight c1;
+ c1.displayStatus();
+ SmartLight c2("bajaj");
+ c2.displayStatus();
+}
