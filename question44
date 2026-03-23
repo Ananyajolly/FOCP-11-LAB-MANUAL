@@ -1,0 +1,19 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int temp[10],i,min;
+    cout<<"enter the temperature"<<endl;
+    for(i=0;i<10;i++)
+    {
+    cin>>temp[i];
+    }
+    for(i=0;i<10;i++)
+    {
+     if(min>temp[i])
+     {
+        min=temp[i];
+     }
+    }
+    cout<<"temp_min="<<min<<endl;
+}
