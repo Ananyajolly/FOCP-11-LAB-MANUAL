@@ -1,0 +1,18 @@
+
+#include<iostream>
+using namespace std;
+int main()
+{
+  int number;
+  cout<<"enter a number"<<endl;
+  cin>>number;
+  int i;
+  cout<<"enter the value of i"<<endl;
+  cin>>i;
+  while(i<=number)
+  {
+    cout<<i;
+    i=i+1;
+  }
+}
+
