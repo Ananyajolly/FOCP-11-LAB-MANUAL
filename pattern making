@@ -1,0 +1,23 @@
+
+#include<iostream>
+using namespace std;
+int main()
+{
+  int r=1;
+  int n;
+  cout<<"n="<<endl;
+  cin>>n;
+  while(r<=n)
+  {
+    int c=1;
+    while(c<=n)
+    {
+      cout<<"*";
+      c++;
+    }
+    cout<<endl;
+    r++;
+
+  }
+
+}
