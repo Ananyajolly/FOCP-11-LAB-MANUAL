@@ -1,0 +1,29 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+   string user_id;
+   int i,count_vowel=0,count_conson=0,count_digit=0;
+   cout<<"enter user id"<<endl;
+   cin.ignore();
+   getline(cin,user_id);
+  
+   for(i=0;i<user_id.length();i++)
+   {
+    if(user_id[i]=='a' || user_id[i]=='e'|| user_id[i]=='i' || user_id[i]=='o'||user_id[i]=='u'||user_id[i]=='A' || user_id[i]=='E'|| user_id[i]=='I' || user_id[i]=='O'||user_id[i]=='U')
+   {
+    count_vowel++;
+   }
+    else
+   {
+    count_conson++;
+   }
+    if(user_id[i]>='0' && user_id[i]<='9')
+   {
+    count_digit++;
+   }
+ }
+ cout<<"total vowels="<<count_vowel<<endl;
+ cout<<"total consonents="<<count_conson<<endl;
+ cout<<"total digits="<<count_digit<<endl;
+}
