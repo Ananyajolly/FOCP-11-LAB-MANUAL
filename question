@@ -1,0 +1,17 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    float marks[5],total=0,percen;
+    int i;
+    cout<<"enter the marks";
+    for(i=0;i<=4;i++)
+    {
+    cin>>marks[i];   
+    total=total+marks[i];
+    }
+    cout<<"TOTAL="<<total<<endl;
+    percen=(total/1000)*100;
+    cout<<"pecentage="<<percen<<endl;
+
+}*
