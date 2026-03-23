@@ -1,0 +1,23 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+ int numb[5],i;
+ int sum_even=0,sum_odd=0;
+ cout<<"enter 5 numbers"<<endl;
+ for(i=0;i<=4;i++)
+ {
+  cin>>numb[i];
+ }
+ for(i=0;i<=4;i++)
+ {
+    if(numb[i]%2==0)
+    {
+     sum_even=sum_even+numb[i];
+    }
+    else
+    sum_odd=sum_odd+numb[i];
+ }
+  cout<<"sum of even_no.="<<sum_even<<endl;
+  cout<<"sum of odd_no.="<<sum_odd<<endl;
+}
