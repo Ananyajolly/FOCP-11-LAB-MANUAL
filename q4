@@ -1,0 +1,10 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+  int feh_temp;
+  cout<<"enter temp in fahrenhiet"<<endl;
+  cin>>feh_temp;
+  int cel_temp=(feh_temp-32)*5/9;
+  cout<<"temp in celsius="<<cel_temp;
+}
