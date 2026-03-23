@@ -1,0 +1,21 @@
+
+#include<iostream>
+using namespace std;
+int main()
+{
+ char ch;
+ cout<<"enter a charecter"<<endl;
+ cin>>ch;
+ if(ch>='a' && ch<='z')
+ {
+  cout<<"its lower case"<<endl;
+ }
+ else if(ch>='A'&& ch<='Z')
+ {
+  cout<<"its upper case"<<endl;
+ }
+ else
+ {
+  cout<<"its a digit"<<endl;
+ }
+}
