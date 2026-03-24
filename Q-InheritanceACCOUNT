@@ -1,0 +1,42 @@
+#include<iostream>
+using namespace std;
+class Account
+{
+ public:
+ int account;
+ float balance;
+ Account()
+ {
+  cout<<"default const1"<<endl;
+  account=1234;
+  balance=2000;
+ }
+ void display_acc()
+ {
+  cout<<"account number="<<account<<"\nbalance="<<balance<<endl;
+ }
+ 
+};
+class SavingAccount:Account
+{
+ int p,t;
+ public:
+ SavingAccount()
+ {
+  cout<<"default const2"<<endl;
+  p=200;
+  t=300;
+ }
+ void calculateInterest()
+ {
+  int interest_rate=(p*balance*t)/100;
+  cout<<"internest rate="<<interest_rate<<endl;
+ }
+};
+int main()
+{
+ SavingAccount s2;
+ s2.calculateInterest();
+ Account s3;
+ s3.display_acc();
+}
