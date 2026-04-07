@@ -1,0 +1,39 @@
+#include<iostream>
+using namespace std;
+class Rect
+{
+ int len;
+ int wid;
+ public:
+ Rect()
+ {
+len=0;
+wid=0;
+ }
+ Rect(int l,int w)
+ {
+len=l;
+wid=w;
+ }
+ void display()
+ {
+    cout<<"\n len of rect="<<len;
+    cout<<"\n wid of rect="<<wid;}
+    friend void area(Rect obj);
+ 
+};
+void area(Rect obj)
+{
+ int area=obj.len*obj.wid;
+ cout<<"area of rect="<<area<<endl;
+}
+int main()
+{
+ Rect r1;
+ Rect r2(2,4);
+ r1.display();
+ area(r1);
+ r2.display();
+ area(r2);
+ return 0;
+}
