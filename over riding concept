@@ -1,0 +1,45 @@
+#include<iostream>
+using namespace std;
+class Shape
+{
+ public:
+ Shape()
+ {
+    cout<<"shape default const called"<<endl;
+ }
+ void area()
+ {
+    cout<<"no dim no area"<<endl;
+ }
+ void display()
+ {
+    cout<<"we are 2d shapes"<<endl;
+ }
+};
+class Rectangle:public Shape
+{
+    int len;
+    int wid;
+    public:
+    Rectangle(int l=7,int w=9):len(l),wid(w)
+    {
+      cout<<"rect obj created"<<endl;
+    }
+      void area()
+      {
+        cout<<"area="<<len*wid<<endl;
+      }
+    
+
+};
+int main()
+{
+Shape s1;
+Rectangle r2(57,57);
+s1.area();
+r2.area();
+r2.Shape::area();
+s1.display();
+r2.display();
+return 0;
+}
